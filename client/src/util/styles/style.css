@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fdf2e9;
+    color: #555;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* -----Header ----- */
+
+.header {
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.45) 0 0 10px 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(253, 242, 233, 0.45);
+    display: flex;
+    filter: alpha(opacity=80);
+    height: 8rem;
+    justify-content: space-between;
+    padding: 0 4.8rem;
+    position: fixed;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    height: 5.2rem;
+}
+
+.main-navigation-list {
+    align-items: center;
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+}
+
+.main-navigation-link:link,
+.main-navigation-link:visited {
+    border-radius: 5px;
+    color: #333;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.main-navigation-link:active,
+.main-navigation-link:hover {
+    color: #cf711f;
+}
+
+.main-navigation-link.navigation-cta:link,
+.main-navigation-link.navigation-cta:visited {
+    background-color: #e67e22;
+    border-radius: 9px;
+    color: #fff;
+    padding: 1.2rem 2.4rem;
+}
+
+.main-navigation-link.navigation-cta:active,
+.main-navigation-link.navigation-cta:hover {
+    background-color: #cf711f;
+}
+
+.button-navigation-mobile {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-navigation-mobile {
+    color: #333;
+    height: 4.8rem;
+    width: 4.8rem;
+}
+
+.icon-navigation-mobile[name="close-outline"] {
+    display: none;
+}
+
+/* ----- Hero ----- */
+
+.section-hero {
+    background-color: #fdf2e9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+    align-items: center;
+    display: grid;
+    gap: 9.6rem;
+    grid-template-columns: 10fr 12fr;
+    margin: auto;
+    max-width: 130rem;
+    padding: 0 3.2rem;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.hero-image {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.arrow-down {
+    color: #cf711f;
+    display: flex;
+    font-size: 3.8rem;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+
+.arrow-down i {
+    color: #cf711f;
+    border-radius: 9px;
+    padding: 0.8rem;
+}
+
+.arrow-down:hover {
+    cursor: pointer;
+    transform: translateY(0.4rem);
+}
+
+/* ----- Adoption ----- */
+
+.section-adoption {
+    padding: 9.6rem 0;
+}
+
+.adoption {
+    border-radius: 12px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.adoption:hover {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-1.2rem);
+}
+
+.adoption-image {
+    object-fit: cover;
+    height: 30rem;
+    width: 100%;
+}
+
+.adoption-content {
+    height: 214px;
+    padding: 3.2rem;
+}
+
+.adoption-name {
+    color: #333;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.adoption-attributes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+.adoption-attribute {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    gap: 1.5rem;
+}
+
+.all-dogs {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    list-style: none;
+}
+
+.list-item {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    gap: 1.6rem;
+    line-height: 1.2;
+}
+
+.list-icon {
+    color: #e67e22;
+    height: 3rem;
+    width: 3rem;
+}
+
+/* ----- Collaborators ----- */
+
+.section-users {
+    padding: 15rem 20rem 0 20rem;
+}
+
+.users {
+    display: grid;
+    column-gap: 8rem;
+    row-gap: 8rem;
+    grid-template-columns: repeat(4, 2fr);
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-visit {
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.4s;
+}
+
+.user-visit:hover{
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.user-image {
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+    width: 6.4rem;
+}
+
+.users-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+    padding-left: 20px;
+}
+
+.user-status {
+    color: #6f6f6f;
+    font-size: 1.6rem;
+}
+
+.cta-form-search input {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 4.8rem;
+}
+
+.prev, .next {
+    background-color: #e67e22;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5em 1em;
+}
+
+.current-page {
+    background-color: #eee;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0 1em;
+    padding: 0.5em 1em;
+}
+
+/* ----- CTA ----- */
+
+.section-cta {
+    background-color: #fdf2e9;
+    padding: 15rem 0 12.8rem;
+}
+
+.cta {
+    background-color: #e67e22;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    border-radius: 11px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    overflow: hidden;
+}
+
+.cta *:focus {
+    box-shadow: 0 0 0 0.4rem rgba(253, 242, 233, 0.5);
+    outline: none;
+}
+
+.cta .heading-secondary {
+    color: #45260a;
+    margin-bottom: 3.2rem;
+}
+
+.cta-text-box {
+    color: #45260a;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-text__cats {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 12rem;
+}
+
+.cta-image-box {
+    background-image: linear-gradient(to right bottom,
+    rgba(235, 152, 78, 0.18), rgba(230, 126, 34, 0.18)),
+    url("../images/dog.jpg");
+
+    background-position: center;
+    background-size: cover;
+}
+
+.cta-image-box--canil {
+    background-image: linear-gradient(to right bottom,
+    rgba(235, 152, 78, 0.18), rgba(230, 126, 34, 0.18)),
+    url("../images/canil.webp");
+
+    background-position: center;
+    background-size: cover;
+}
+
+.cta-image-box__cats {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.cta-form {
+    display: grid;
+    column-gap: 3.2rem;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.4rem;
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+    background-color: #fdf2e9;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    width: 100%;
+}
+
+.cta-form input::placeholder {
+    color: #aaa;
+}
+
+/* ----- Footer ----- */
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.contacts-add {
+    color: #767676;
+    margin-bottom: 2.4rem;
+}
+
+.copyright {
+    color: #767676;
+    font-size: 1.4rem;
+    margin-top: auto;
+    line-height: 1.6;
+}
+
+.footer {
+    padding: 12.8rem 0;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    color: #767676;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+}
+
+.footer-link:active,
+.footer-link:hover {
+    color: #555;
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
